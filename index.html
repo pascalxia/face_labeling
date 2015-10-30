@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Face Labeling</title>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="assets/js/script.js"></script>
+</head>
+<body>
+    <div id="content">
+        <canvas id="canvas" width="640" height="460"> </canvas>
+        <video id="movie" width="640" height="480" controls>
+            <!--<source src="assets/img/movie1.mp4" type="video/mp4"> -->
+			<source src="assets/img/BarryLyndon_16Jan2015_1.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="data">
+        <div id="current-box-coordinates">
+            Current box coordinates (L, T, R, B): 
+        </div>
+        <div id="current-box-size">
+            Current box size: 
+        </div>
+        <div id="record-box-coordinates">
+            Recording box coordinates (L, T, R, B): 
+        </div>
+        <div id="record-box-size">
+            Recording box size: 
+        </div>
+        <div id="record-time-elapsed-in-video">
+            Recording time elapsed in video: 
+        </div>
+		<textarea id="output-data"></textarea>
+    </div>
+	
+    <div id="controls">
+        <u> Controls </u>
+        <br>
+        <br>
+        If no box:
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Click and drag to create a box.
+        <br>
+        <br>
+        If box:
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Move mouse to move box.
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Click and hold to start recording data, keeping box over face.
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Release mouse button to save recorded data.
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hit Esc to delete box.
+        <br>
+        <br>
+        At any time:
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hit Space to pause video.
+    </div>
+</body>
+</html>

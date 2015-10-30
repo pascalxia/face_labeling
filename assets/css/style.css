@@ -1,0 +1,50 @@
+body {
+}
+
+#content {
+}
+
+#content canvas {
+    position: absolute;
+    z-index: 1;
+}
+
+#content video {
+    position: absolute;
+}
+
+#current-box-coordinates {
+    position: absolute;
+    top: 500px;
+}
+
+#current-box-size {
+    position: absolute;
+    top: 520px;
+}
+
+#record-box-coordinates {
+    position: absolute;
+    top: 550px;
+}
+
+#record-box-size {
+    position: absolute;
+    top: 570px;
+}
+
+#record-time-elapsed-in-video {
+    position: absolute;
+    top: 600px;
+}
+
+#output-data {
+    position: absolute;
+    top: 630px;
+}
+
+
+#controls {
+    position: absolute;
+    left: 800px;
+}
